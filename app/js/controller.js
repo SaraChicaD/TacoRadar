@@ -1,13 +1,17 @@
 angular.module('flickrApp.feed', ['ngRoute'])
 
-.config(['$routeProvider', function($routeProvider) {
+.config(['$routeProvider', 
+  function($routeProvider) {
+  
   $routeProvider.when('/feed', {
     templateUrl: 'template/feed.html',
     controller: 'FeedController'
+    
   });
 }])
 
-.controller('FeedController', ['$scope', '$http', '$log', function($scope, $http, $log) {
+.controller('FeedController', ['$scope', '$http', '$log', 
+  function($scope, $http, $log) {
 
   $scope.data = {
 
