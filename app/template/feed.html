@@ -1,0 +1,88 @@
+
+<div class="container" style="background: url('//farm8.staticflickr.com/7188/6800387182_9d031f092d_o_d.jpg') no-repeat center center fixed; background-size:100% auto;">
+
+	<style type="text/css">
+
+	h1{
+		color: white;
+	}
+
+	p{
+
+		color: white;
+	}
+
+	</style>
+
+	<div class="text-center" >
+
+		<h1>We Are Stardust:</h1>
+
+		<br/>
+
+		<div>
+			<iframe width="420" height="315" src="https://www.youtube.com/embed/MMED5boxySs" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<br/>
+
+
+		<h1>We Are Made From The Same Stuff As Stars, Check It Out:</h1>
+
+		<div class="row">
+
+			<ul class="list-unstyled list-inline">
+				<li>
+					<div class="thumbnail">
+						<img class="img-responsive" src="https://farm6.staticflickr.com/5789/24071120235_38254c9318_q_d.jpg" >
+					</div>
+				</li>
+				<li>    
+					<div class="thumbnail">
+						<img class="img-responsive" src="https://farm1.staticflickr.com/694/23521659649_7919676d0d_q_d.jpg">
+					</div>
+				</li>
+				<li>    
+					<div class="thumbnail">
+						<img class="img-responsive" src="https://farm6.staticflickr.com/5827/23807356641_887c027441_q_d.jpg">
+					</div>
+				</li>
+				<li>    
+					<div class="thumbnail">
+						<img class="img-responsive" src="https://farm1.staticflickr.com/712/22206278923_459d340a22_q_d.jpg">
+					</div>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="row">
+
+			<ul class="list-unstyled text-center">
+				<li>
+					<h1>See Yourself As A Star</h1>
+				</li>
+				<li>
+					<button class="btn btn-default btn-lg"
+					ng-click="data.feed = true">
+					Stardust Me
+				</button>
+			</li>
+		</ul>
+
+		<div ng-if="data.feed">
+			<div class="row">
+				<ul class="list-unstyled list-inline">
+					<li ng-repeat="feed in flickrFeed">
+
+						<img src="{{feed.media.m}}" class="img-responsive thumbnail" />
+
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+</div>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="flickrApp">
+<head>
+  <meta charset="utf-8">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+  </script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Stardust Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style type="text/css">
+.navbar {
+   background: transparent;
+   border-color: light-gray;
+   background-color: rgba(128,128,128,.4);
+
+ }
+   .footer {
+   background: transparent;
+   border-color: light-gray;
+   background-color: rgba(128,128,128,.4);
+
+ }
+ </style>
+
+  <body ng-controller="FeedController">
+      <!-- HEADER -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#/view1" style="color:white;">Stardust Me</a>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" style="color:white;">Github Repo</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- VIEW -->
+    <div ng-view
+style="background: url('//farm8.staticflickr.com/7188/6800387182_9d031f092d_o_d.jpg') no-repeat center center fixed; background-size:100% auto;" class="container"
+    ></div>
+      <!-- FOOTER -->
+      <footer class="footer navbar-fixed-bottom">
+        <div class="container">
+          <ul class="list-unstyled list-inline">
+            <li class="pull-left">
+              <a href="https://twitter.com/sarachicad" style="color:white;">@SaraChicaD on Github</a>
+            </li>
+            <li class="pull-right">
+              <a href="https://github.com/sarachicad" style="color: white;">@SaraChicaD on Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+  </body>
+</html>
