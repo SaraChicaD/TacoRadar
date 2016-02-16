@@ -1,16 +1,16 @@
-angular.module('flickrApp.feed', ['ngRoute'])
+angular.module('tacosApp.tacos', ['ngRoute'])
 
 .config(['$routeProvider', 
   function($routeProvider) {
   
-  $routeProvider.when('/feed', {
-    templateUrl: 'template/feed.html',
-    controller: 'FeedController'
+  $routeProvider.when('/tacos', {
+    templateUrl: 'template/tacos.html',
+    controller: 'tacosController'
     
   });
 }])
 
-.controller('FeedController', ['$scope', '$http', '$log', 
+.controller('tacosController', ['$scope', '$http', '$log', 
   function($scope, $http, $log) {
 
   $scope.data = {
@@ -19,12 +19,12 @@ angular.module('flickrApp.feed', ['ngRoute'])
 
   };
 
-    $http.jsonp('https://api.flickr.com/services/feeds/photos_public.gne?id=24662369@N07&format=json&tags=hubble')
-    .success(jsonFlickrFeed = function(data) {
+    // $http.jsonp('https://api.flickr.com/services/tacoss/photos_public.gne?id=24662369@N07&format=json&tags=hubble')
+    // .success(jsonFlickrtacos = function(data) {
 
-    $scope.data = data;
-    $scope.flickrFeed = data.items;
-    $log.log(data);
+    // $scope.data = data;
+    // $scope.flickrtacos = data.items;
+    // $log.log(data);
 
-  });
+  // });
 }]);

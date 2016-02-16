@@ -1,11 +1,11 @@
-angular.module('flickrApp', [
+angular.module('tacosApp', [
   'ngRoute',
-  'flickrApp.feed'
+  'tacosApp.tacos'
 ]).
 
 config(['$routeProvider', 
 	function($routeProvider) {
 
-  $routeProvider.otherwise({redirectTo: '/feed'});
+  $routeProvider.otherwise({redirectTo: '/tacos'});
   
 }]);
