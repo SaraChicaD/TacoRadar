@@ -1,9 +1,7 @@
-Stardust Me - Angular Flickr API App
+TacoRadar 
 ====================================
 
-A simple app highlighting the Flickr API, NASA's Flickr feed, Neil Degrasse Tyson and our awesome place in the universe.
-
-See the live app on Heroku [here](https://stardustme.herokuapp.com/#/feed).
+No one should suffer a taco emergency — taco radar is here to make sure that you'll always know where the nearest taco is. This web app will be a mobile-first Yelp API-powered app to help you get that taco. 
 
 
 I used the following technologies in this project:
@@ -14,11 +12,6 @@ I used the following technologies in this project:
 - HTML5
 - CSS3
 - Bootstrap
-- Flickr API
-
-This is the NASA feed I used:
-----
-- [NASA Goddard Space Flight Center](https://www.flickr.com/photos/gsfc/)
-- With a filter for "hubble"
 
 If you have any questions feel free to reach out to me on Twitter [@SaraChicaD](https://twitter.com/SaraChicaD).
+# TacoRadar
