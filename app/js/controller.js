@@ -3,28 +3,36 @@ angular.module('tacosApp.tacos', ['ngRoute'])
 .config(['$routeProvider', 
   function($routeProvider) {
   
-  $routeProvider.when('/tacos', {
+  $routeProvider
+  .when('/tacos', {
     templateUrl: 'template/tacos.html',
     controller: 'tacosController'
     
+  })
+    .when('/about', {
+    templateUrl: 'template/about.html',
+    controller: 'aboutController'
+    
   });
+
 }])
 
 .controller('tacosController', ['$scope', '$http', '$log', 
   function($scope, $http, $log) {
 
-  $scope.data = {
 
-    feed: false
-
-  };
-
-    // $http.jsonp('https://api.flickr.com/services/tacoss/photos_public.gne?id=24662369@N07&format=json&tags=hubble')
-    // .success(jsonFlickrtacos = function(data) {
+    // $http.jsonp('https://api.yelp.com/v2/search?term=tacos&location=Austin')
+    // .success(jsonYelpTacos = function(data) {
 
     // $scope.data = data;
-    // $scope.flickrtacos = data.items;
     // $log.log(data);
 
-  // });
-}]);
+
+}])
+
+.controller('aboutController', ['$scope', '$http', '$log', 
+  function($scope, $http, $log) {
+
+
+}])
+;

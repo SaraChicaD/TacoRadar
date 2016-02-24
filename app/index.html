@@ -8,13 +8,18 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  
+    <!--   WebHostingHub Glyphs -->
+  <link rel="stylesheet" href="css/whhg.css">
+
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
   </script>
+
+
+
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Taco Radar</title>
@@ -22,40 +27,14 @@
 
 </head>
 
-<!-- CUSTOM STYLES -->
-<style type="text/css">
-.navbar {
-   background: transparent;
-   border-color: light-gray;
-   background-color: rgba(128,128,128,.4);
-
- }
-   .footer {
-   background: transparent;
-   border-color: light-gray;
-   background-color: rgba(128,128,128,.4);
-
- }
-
- body {
-/*  background: url('//farm8.staticflickr.com/7188/6800387182_9d031f092d_o_d.jpg') no-repeat center center fixed;*/
-background-color: white;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  color:#fff;
-}
- </style>
-
-  <body ng-controller="tacosController">
+  <body ng-controller="tacosController" style="background-color: #B2DDF7; color: #031927;">
  
       <!-- HEADER -->
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-static-top" style="background-color: #FF101F;">
       <div class="container">
-        <a class="navbar-brand" href="https://TacoRadar.herokuapp.com/#/tacos" style="color:white;"><h3>Taco Radar</h3></a>
+        <a class="navbar-brand" href="#tacos" style="color:white;"><h3>Taco Radar</h3></a>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://github.com/SaraChicaD/TacoRadar" style="color:white;"><h3>Github Repo</h3></a></li>
+          <li><a href="#about" style="color:white; background-color: #FF101F !important;"><h3>About Taco Radar</h3></a></li>
         </ul>
       </div>
     </nav>
@@ -64,17 +43,14 @@ background-color: white;
     <div ng-view></div>
 
       <!-- FOOTER -->
-      <footer class="footer navbar-fixed-bottom">
-        <div class="container">
-          <ul class="list-unstyled list-inline">
-            <li class="pull-left">
-              <a href="https://github.com/sarachicad" style="color:white;"><h4>@SaraChicaD on Github</h4></a>
-            </li>
-            <li class="pull-right">
-              <a href="https://twitter.com/sarachicad" style="color: white;"><h4>@SaraChicaD on Twitter</h4></a>
-            </li>
-          </ul>
-        </div>
+      <footer class="footer navbar-fixed-bottom" style="background-color: #FF101F">
+        <div class="container">            
+          <a href="https://github.com/SaraChicaD/TacoRadar" style="color:white;" class="text-center">
+            <h4>
+              Github Repo
+            </h4>
+          </a>
+       </div>
       </footer>
 
     <script src="bower_components/angular/angular.js"></script>

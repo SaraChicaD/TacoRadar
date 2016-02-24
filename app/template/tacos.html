@@ -1,26 +1,60 @@
-<div class="container" style="background-color: #C8E0F4; color: #031927;">
+<div class="container">
+	
 	<div class="row text-center">
-		<h1><strong>Never fear, Taco Radar is here!</strong></h1>
-		<br />
-		<p>
-			Need a taco? All you have to do is press the "Taco Me" 
-			button and we'll whip up the 5 nearest tacos to you!
-		</p>
-	</div>
-	<br />
-	<div class="row text-center">
-		<button class="btn btn-lg" style="background-color: #BA1200; text-decoration-color: #031927; border: 2px solid #031927; border-radius: 4px;">
-			<strong>Taco Me!</strong>
-		</button>
-	</div>
-	<br />
-	<div class="row text-center">
-		<ul class="text-center list-unstyled">
-			<!--ng-repeat results here-->
-			<li>TACO 1</li>
-			<li>TACO 2</li>
-			<li>TACO 3</li>
-		</ul>
+		<h2>
+			<strong>Never fear, Taco Radar is here!
+			</strong>
+		</h1>
 	</div>
 
-</div>
+		<br />
+
+
+		<div class="row text-center">
+			
+			<div class="col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+				<br />
+				<p>
+					Need a taco? All you have to do is press the "Taco Me" 
+					button and we'll whip up the 5 nearest tacos to you!
+				</p>
+				<br/>
+				<button class="btn btn-lg" style="background-color: #FF101F; color: white; border-radius: 4px;">
+					<strong>Taco Me!</strong>
+				</button>
+
+
+			<div>
+					
+					<ul class="text-center list-unstyled" style="padding-top: 10px;">
+						<!--ng-repeat results here-->
+						<li>TACO 1</li>
+						<li>TACO 2</li>
+						<li>TACO 3</li>
+						<li><i class="icon-taco"></i></li>
+					</ul>
+
+			</div>
+		
+			</div>
+		
+		</div>
+	</div>
+
+
+<style type="text/css">
+li {
+    display: block;
+}
+
+.custom-bullet li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e067";
+    font-family: 'Glyphicons Halflings';
+    font-size: 20px;
+    position: relative;
+    margin-top: 4px;
+    color: teal;
+    margin-right: 10px;
+}
+</style>

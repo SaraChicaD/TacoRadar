@@ -1,18 +1,18 @@
-angular.module('tacoApp.about', ['ngRoute'])
+// angular.module('tacoApp.about', ['ngRoute'])
 
-.config(['$routeProvider', 
-  function($routeProvider) {
+// .config(['$routeProvider', 
+//   function($routeProvider) {
   
-  $routeProvider.when('/about', {
-    templateUrl: 'template/about.html',
-    controller: 'AboutController'
+//   $routeProvider.when('/about', {
+//     templateUrl: 'template/about.html',
+//     controller: 'aboutController'
     
-  });
-}])
+//   });
+// }])
 
-.controller('AboutController', ['$scope', '$http', '$log', 
-  function($scope, $http, $log) {
+// .controller('aboutController', ['$scope', '$http', '$log', 
+//   function($scope, $http, $log) {
 
 
-  }
-]);
+//   }
+// ]);
